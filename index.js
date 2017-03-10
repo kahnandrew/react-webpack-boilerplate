@@ -7,15 +7,11 @@ var express = require('express');
 var app = express();
 
 var compress = require('compression');
-var layouts = require('express-ejs-layouts');
 
-app.set('layout');
 app.set('view engine', 'ejs');
-app.set('view options', {layout: 'layout'});
 app.set('views', path.join(process.cwd(), '/server/views'));
 
 app.use(compress());
-app.use(layouts);
 app.use('/client', express.static(path.join(process.cwd(), '/client')));
 
 app.disable('x-powered-by');
@@ -30,7 +26,7 @@ if (env.production) {
   });
 }
 
-app.get('/*', function(req, res) {
+app.get('/', function(req, res) {
   res.render('index', {
     env: env
   });

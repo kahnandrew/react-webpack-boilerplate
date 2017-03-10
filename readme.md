@@ -1,7 +1,6 @@
-# react-webpack-boilerplate [![Build Status][travis-badge]][travis] [![Coverage Status][coveralls-badge]][coveralls]
+# react-webpack-boilerplate
 > Simple production-ready boilerplate for [React](http://facebook.github.io/react/) and [Webpack](http://webpack.github.io/) (SASS and React hot reloading) and tests with Jest.
 
-Note: if you want React server-side rendering support, take a look at my personal site repo based on this: [github.com/srn/srn.io](https://github.com/srn/srn.io)
 
 ## Install
 
@@ -41,29 +40,6 @@ Also build the production bundle:
 $ npm run dist
 ```
 
-## Tests
-
-```sh
-$ npm test
-```
-
-Only run specific tests
-
-```sh
-$ npm test -- NotFoundComponent
-```
-
-Coverage
-
-```sh
-$ npm test -- --coverage
-```
-
 ## License
 
 MIT © [Søren Brokær](http://srn.io)
-
-[travis]: https://travis-ci.org/srn/react-webpack-boilerplate
-[travis-badge]: http://img.shields.io/travis/srn/react-webpack-boilerplate.svg?style=flat-square
-[coveralls]: https://coveralls.io/r/srn/react-webpack-boilerplate
-[coveralls-badge]: http://img.shields.io/coveralls/srn/react-webpack-boilerplate.svg?style=flat-square
